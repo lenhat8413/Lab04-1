@@ -192,5 +192,22 @@ namespace Lab04_1
                 this.Close();
             }
         }
+
+        private void Form1_Closing(object sender, FormClosingEventArgs e)
+        {
+            // Display a confirmation dialog
+            DialogResult result = MessageBox.Show(
+                "Bạn có chắc chắn muốn thoát chương trình?",
+                "Xác nhận thoát",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            // If the user clicks No, cancel the close operation
+            if (result == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }
