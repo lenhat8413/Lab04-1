@@ -13,14 +13,14 @@ using Lab04_1.Model;
 
 namespace Lab04_1
 {
-    public partial class Form1 : Form
+    public partial class QuanLySinhVien : Form
     {
         
-        public Form1()
+        public QuanLySinhVien()
         {
             InitializeComponent();
         }
-        StudentContextDB contextDB = new StudentContextDB();
+        StudentContextDB1 contextDB = new StudentContextDB1();
         List<Student> listStudent = new List<Student>();
         List<Faculty> listFaculty = new List<Faculty>();
         private void Form1_Load(object sender, EventArgs e)
@@ -88,7 +88,7 @@ namespace Lab04_1
         private void btnXoa_Click(object sender, EventArgs e)
         {
             var studentDel = contextDB.Students.FirstOrDefault(sv => sv.StudentID == txtMSSV.Text.Trim());
-            DialogResult status = MessageBox.Show($"Bạn có đồng ý xóa thông tin sinh viên ({txtHoten.Text}) không?", "thông báo", 
+            DialogResult status = MessageBox.Show($"Bạn có đồng ý xóa thông tin sinh viên này không?", "thông báo", 
                 MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (status == DialogResult.OK)
             {
@@ -96,7 +96,7 @@ namespace Lab04_1
                 contextDB.SaveChanges();
                 List<Student> listStudent = contextDB.Students.ToList();
                 fillDGVStudent(listStudent);
-                MessageBox.Show($"Xoá sinh viên ({txtHoten.Text}) thành công!");
+                MessageBox.Show($"Xoá sinh viên thành công!");
             }
         }
 
@@ -208,6 +208,35 @@ namespace Lab04_1
             {
                 e.Cancel = true;
             }
+        }
+
+        private void quảnLýKhoaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Open QuanLyKhoa.cs
+            QuanLyKhoa qlKhoa = new QuanLyKhoa();
+            qlKhoa.Show();
+        }
+
+        private void tìmKiếmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Open TimKiem.cs
+            Form1 timKiem = new Form1();
+            timKiem.Show();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void txtDTB_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

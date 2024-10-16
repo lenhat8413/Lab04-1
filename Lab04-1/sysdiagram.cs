@@ -7,18 +7,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Lab04_1.Model
+namespace Lab04_1
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Student
+    public partial class sysdiagram
     {
-        public string StudentID { get; set; }
-        public string StudentName { get; set; }
-        public double AverageScore { get; set; }
-        public int FacultyID { get; set; }
-    
-        public virtual Faculty Faculty { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }
