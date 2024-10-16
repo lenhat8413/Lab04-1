@@ -60,7 +60,7 @@
             this.dgvTableKhoa.RowHeadersWidth = 51;
             this.dgvTableKhoa.RowTemplate.Height = 24;
             this.dgvTableKhoa.Size = new System.Drawing.Size(526, 301);
-            this.dgvTableKhoa.TabIndex = 8;
+            this.dgvTableKhoa.TabIndex = 0;
             this.dgvTableKhoa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTableKhoa_CellContentClick);
             // 
             // colMaKhoa
@@ -93,7 +93,7 @@
             this.groupBox1.Location = new System.Drawing.Point(16, 38);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(405, 222);
-            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Khoa";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -105,6 +105,7 @@
             this.txtMaKhoa.Name = "txtMaKhoa";
             this.txtMaKhoa.Size = new System.Drawing.Size(154, 26);
             this.txtMaKhoa.TabIndex = 1;
+            this.txtMaKhoa.TextChanged += new System.EventHandler(this.txtMaKhoa_TextChanged);
             // 
             // txtTenKhoa
             // 
@@ -112,7 +113,7 @@
             this.txtTenKhoa.Multiline = true;
             this.txtTenKhoa.Name = "txtTenKhoa";
             this.txtTenKhoa.Size = new System.Drawing.Size(252, 26);
-            this.txtTenKhoa.TabIndex = 1;
+            this.txtTenKhoa.TabIndex = 2;
             // 
             // txtTongGS
             // 
@@ -120,7 +121,7 @@
             this.txtTongGS.Multiline = true;
             this.txtTongGS.Name = "txtTongGS";
             this.txtTongGS.Size = new System.Drawing.Size(154, 26);
-            this.txtTongGS.TabIndex = 1;
+            this.txtTongGS.TabIndex = 3;
             // 
             // label3
             // 
@@ -159,7 +160,7 @@
             this.btnThoat.Margin = new System.Windows.Forms.Padding(2);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(127, 38);
-            this.btnThoat.TabIndex = 12;
+            this.btnThoat.TabIndex = 3;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
@@ -171,7 +172,7 @@
             this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(83, 38);
-            this.btnXoa.TabIndex = 11;
+            this.btnXoa.TabIndex = 2;
             this.btnXoa.Text = "Xoá";
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
@@ -183,7 +184,7 @@
             this.btnThemSua.Margin = new System.Windows.Forms.Padding(2);
             this.btnThemSua.Name = "btnThemSua";
             this.btnThemSua.Size = new System.Drawing.Size(97, 38);
-            this.btnThemSua.TabIndex = 10;
+            this.btnThemSua.TabIndex = 1;
             this.btnThemSua.Text = "Thêm/Sửa";
             this.btnThemSua.UseVisualStyleBackColor = true;
             this.btnThemSua.Click += new System.EventHandler(this.btnThemSua_Click);

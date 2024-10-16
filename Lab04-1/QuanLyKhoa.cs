@@ -162,5 +162,10 @@ namespace Lab04_1
         {
 
         }
+
+        private void txtMaKhoa_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

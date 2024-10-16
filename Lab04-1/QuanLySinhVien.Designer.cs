@@ -95,7 +95,7 @@ namespace Lab04_1
             this.btnThoat.Margin = new System.Windows.Forms.Padding(2);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(66, 38);
-            this.btnThoat.TabIndex = 4;
+            this.btnThoat.TabIndex = 7;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
@@ -107,7 +107,7 @@ namespace Lab04_1
             this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(71, 38);
-            this.btnXoa.TabIndex = 4;
+            this.btnXoa.TabIndex = 6;
             this.btnXoa.Text = "Xoá";
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
@@ -119,7 +119,7 @@ namespace Lab04_1
             this.btnThemSua.Margin = new System.Windows.Forms.Padding(2);
             this.btnThemSua.Name = "btnThemSua";
             this.btnThemSua.Size = new System.Drawing.Size(90, 38);
-            this.btnThemSua.TabIndex = 4;
+            this.btnThemSua.TabIndex = 5;
             this.btnThemSua.Text = "Thêm/Sửa";
             this.btnThemSua.UseVisualStyleBackColor = true;
             this.btnThemSua.Click += new System.EventHandler(this.btnThemSua_Click);
@@ -180,7 +180,7 @@ namespace Lab04_1
             this.cbbChuyenNganh.Margin = new System.Windows.Forms.Padding(2);
             this.cbbChuyenNganh.Name = "cbbChuyenNganh";
             this.cbbChuyenNganh.Size = new System.Drawing.Size(168, 24);
-            this.cbbChuyenNganh.TabIndex = 2;
+            this.cbbChuyenNganh.TabIndex = 4;
             this.cbbChuyenNganh.SelectedIndexChanged += new System.EventHandler(this.cbbChuyenNganh_SelectedIndexChanged);
             // 
             // txtDTB
@@ -190,7 +190,7 @@ namespace Lab04_1
             this.txtDTB.Margin = new System.Windows.Forms.Padding(2);
             this.txtDTB.Name = "txtDTB";
             this.txtDTB.Size = new System.Drawing.Size(168, 22);
-            this.txtDTB.TabIndex = 0;
+            this.txtDTB.TabIndex = 3;
             this.txtDTB.Text = "0";
             this.txtDTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtDTB.TextChanged += new System.EventHandler(this.txtDTB_TextChanged);
@@ -202,7 +202,7 @@ namespace Lab04_1
             this.txtHoten.Margin = new System.Windows.Forms.Padding(2);
             this.txtHoten.Name = "txtHoten";
             this.txtHoten.Size = new System.Drawing.Size(168, 22);
-            this.txtHoten.TabIndex = 0;
+            this.txtHoten.TabIndex = 2;
             this.txtHoten.TextChanged += new System.EventHandler(this.txtHoten_TextChanged);
             // 
             // txtMSSV
@@ -212,7 +212,7 @@ namespace Lab04_1
             this.txtMSSV.Margin = new System.Windows.Forms.Padding(2);
             this.txtMSSV.Name = "txtMSSV";
             this.txtMSSV.Size = new System.Drawing.Size(168, 22);
-            this.txtMSSV.TabIndex = 0;
+            this.txtMSSV.TabIndex = 1;
             this.txtMSSV.TextChanged += new System.EventHandler(this.txtMSSV_TextChanged);
             // 
             // dgvTableSV
@@ -230,7 +230,7 @@ namespace Lab04_1
             this.dgvTableSV.RowHeadersWidth = 51;
             this.dgvTableSV.RowTemplate.Height = 24;
             this.dgvTableSV.Size = new System.Drawing.Size(526, 301);
-            this.dgvTableSV.TabIndex = 0;
+            this.dgvTableSV.TabIndex = 1;
             this.dgvTableSV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTableSV_CellContentClick);
             // 
             // colMSSV
@@ -266,7 +266,7 @@ namespace Lab04_1
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(509, 42);
-            this.label6.TabIndex = 2;
+            this.label6.TabIndex = 0;
             this.label6.Text = "Quản Lý Thông Tin Sinh Viên";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -304,7 +304,7 @@ namespace Lab04_1
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(924, 29);
-            this.menuStrip1.TabIndex = 6;
+            this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
